@@ -8,6 +8,7 @@ import qualified Day05
 import qualified Day06
 import qualified Day07
 import qualified Day08
+import qualified Day09
 
 main :: IO ()
 main = do
@@ -35,4 +36,7 @@ main = do
   putStr "Day08:\n"
   putStr $ "solve1: " ++ (show . Day08.solve1 $ Day08.testInput) ++ "\n"
   putStr $ "solve2: " ++ (show . Day08.solve2 $ Day08.testInput) ++ "\n"
+  putStr "Day09:\n"
+  putStr $ "solve1: " ++ (show . Day09.solve1 $ Day09.testInput) ++ "\n"
+  putStr $ "solve2: " ++ (show . Day09.solve2 $ Day09.testInput2) ++ "\n"
   return ()
