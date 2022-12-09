@@ -48,8 +48,4 @@ scenicScore inp = zipWith (\ a b -> zipWith (*) a b) lr tb
 
 solve1, solve2 :: String -> Int
 solve1 = sum . map (length . filter (==True)) . markVisible . map lineFrom . lines
-solve2 = maximum . map maximum . scenicScore . map lineFrom . lines 
--- main = do
---   input <- readFile "real.txt"
---   -- print $ sum . map (length . filter (==True)) . markVisible . map lineFrom $ lines input
---   print $ maximum . map maximum . scenicScore . map lineFrom $ lines input
+solve2 = maximum . map maximum . scenicScore . map lineFrom . lines
