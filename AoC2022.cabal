@@ -10,6 +10,7 @@ common shared-properties
   build-depends:
      base ^>=4.14.1.0
     ,containers
+    ,template-haskell
   ghc-options:
     -Wall
 
@@ -17,6 +18,7 @@ common shared-properties
 library
     import: shared-properties
     hs-source-dirs:
+        util
         Day01
         Day02
         Day03
@@ -26,6 +28,8 @@ library
         Day07
         Day08
         Day09
+        Day10
+        
     exposed-modules:
         Day01
         Day02
@@ -36,6 +40,9 @@ library
         Day07
         Day08
         Day09
+        Day10
+    other-modules:
+        Literal
 
 
 executable runAllTests
