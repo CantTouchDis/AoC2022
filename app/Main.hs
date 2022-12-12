@@ -10,6 +10,8 @@ import qualified Day07
 import qualified Day08
 import qualified Day09
 import qualified Day10
+--import qualified Day11
+import qualified Day12
 
 main :: IO ()
 main = do
@@ -43,4 +45,10 @@ main = do
   putStr "Day10:\n"
   putStr $ "solve1: " ++ (show . Day10.solve1 $ Day10.testInput) ++ "\n"
   putStr $ "solve2: \n" ++ (Day10.solve2 $ Day10.testInput) ++ "\n"
+  --putStr "Day11:\n"
+  --putStr $ "solve1: " ++ (show . Day11.solve1 $ Day11.testInput) ++ "\n"
+  --putStr $ "solve2: " ++ (show . Day11.solve2 $ Day11.testInput) ++ "\n"
+  putStr "Day12:\n"
+  putStr $ "solve1: " ++ (show . Day12.solve1 $ Day12.testInput) ++ "\n"
+  putStr $ "solve2: " ++ (show . Day12.solve2 $ Day12.testInput) ++ "\n"
   return ()
