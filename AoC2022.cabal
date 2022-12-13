@@ -30,6 +30,7 @@ library
         Day09
         Day10
         Day12
+        Day13
         
     exposed-modules:
         Day01
@@ -43,6 +44,7 @@ library
         Day09
         Day10
         Day12
+        Day13
     other-modules:
         Literal
 
